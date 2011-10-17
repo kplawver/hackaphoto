@@ -16,3 +16,7 @@ h2. What's it made of?
 # "OmniAuth 1.0p2":https://github.com/intridea/omniauth/
 # "Twitter Bootstrap":http://twitter.github.com/bootstrap/
 # A little bit of glue.
+
+h2. Dependencies
+
+# "MongoDB":http://mongodb.org - If I have time before tomorrow, I may rip this out and just set the key and secret as a cookie and create the OAuth client from that, but I like MongoDB and MongoMapper, so I used it.
