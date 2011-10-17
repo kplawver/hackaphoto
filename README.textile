@@ -1,10 +1,10 @@
-== Hackaphoto - A Demo "Hackathon" App
+h1. Hackaphoto - A Demo "Hackathon" App
 
 I wrote this little example in less than six hours just to get back into the swing of doing a hackathon-style coding project.  There probably isn't much here worth copying other than maybe the Tumblr OmniAuth strategy that works with 1.0.  Other than that, I think I'd skip this one.
 
-=== Installation
+h2. Installation
 
-You need to set two environment variables: *TUMBLR_KEY* and *TUMBLR_SECRET* with your OAuth key and secret you get from the Tumblr API (http://www.tumblr.com/oauth/apps).  
+You need to set two environment variables: *TUMBLR\_KEY* and *TUMBLR\_SECRET* with your OAuth key and secret you get "after registering your app with Tumblr":http://www.tumblr.com/oauth/apps.  
 
 I've currently got them set in my .powenv file in my app directory, but of course, that will only work if you're using Pow.
 
