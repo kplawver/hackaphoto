@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-gem 'mongomapper'
-gem 'omniauth'
+gem 'mongo_mapper'
+gem 'omniauth', '1.0.0.pr2'
+gem 'omniauth-oauth', '1.0.0.pr2'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
