@@ -4,8 +4,15 @@ I wrote this little example in less than six hours just to get back into the swi
 
 h2. Installation
 
-You need to set two environment variables: *TUMBLR\_KEY* and *TUMBLR\_SECRET* with your OAuth key and secret you get "after registering your app with Tumblr":http://www.tumblr.com/oauth/apps.  
+You need to set two environment variables: *TUMBLR_KEY* and *TUMBLR_SECRET* with your OAuth key and secret you get "after registering your app with Tumblr":http://www.tumblr.com/oauth/apps.  
 
 I've currently got them set in my .powenv file in my app directory, but of course, that will only work if you're using Pow.
 
 Other than that, it should just "work". It forces you to authenticate against Tumblr and give permission and then starts loading photos from your tumblr dashboard.  I know, it's really simple.  I would have done more, but the OmniAuth strategy took longer than I expected.
+
+h2. What's it made of?
+
+# "Rails 3.1":http://rubyonrails.com
+# "OmniAuth 1.0p2":https://github.com/intridea/omniauth/
+# "Twitter Bootstrap":http://twitter.github.com/bootstrap/
+# A little bit of glue.
