@@ -29,7 +29,7 @@ class User
 	end
 	
 	def self.consumer
-	  @@consumer ||= OAuth::Consumer.new("xCgvYSBlH0eIgwKTRVpmXF8BN5TJJeEbjUiOoIQLyyuGqJolHK","gWnVay3VNVM6y4qCPpzDVT27EYZL5WKCho91RpcDPVfxHRN3u4",{
+	  @@consumer ||= OAuth::Consumer.new(ENV['TUMBLR_KEY'],ENV['TUMBLR_SECRET'],{
 	    :site => "http://api.tumblr.com/v2",
 	    :scheme => :header,
 	    :http_method => :post
