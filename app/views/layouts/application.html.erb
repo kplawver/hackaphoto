@@ -2,13 +2,36 @@
 <html>
 <head>
   <title>Hackaphoto</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    ["bootstrap.min.css","application.css"] %>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" %>
+  <%= javascript_include_tag ["application.js",'bootstrap-twipsy.js','bootstrap-popover.js'] %>
+  <% # = javascript_include_tag ["bootstrap-alerts.js","bootstrap-dropdown.js","boostrap-modal.js","bootstrap-popover.js","boostrap-scrollspy.js","bootstrap-tabs.js","bootstrap-twipsy.js"] %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="topbar">
+		<div class="topbar-inner">
+			<div class="container-fluid">
+				<a href="#" class="brand">Hackaphoto!</a>
+				<p class="pull-right">
+					You're logged in as <%= @user.name %>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="sidebar">
+			
+		</div>
+		<div class="content">
+			<%= yield %>
+		</div>
+	</div>
 
-<%= yield %>
 
 </body>
 </html>

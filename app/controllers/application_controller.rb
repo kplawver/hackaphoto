@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 	before_filter :require_user
+	layout "application"
 	
 	protected
 	
@@ -17,5 +18,8 @@ class ApplicationController < ActionController::Base
 		
 	end
 
+  def current_user
+    @user
+  end
 
 end
